@@ -313,11 +313,11 @@ footer {
             bottom: 2rem; 
             right: 2rem; 
             background-color: #2563eb; 
-            color: #ffffff; 
+            color: green; 
             border: none;
             border-radius: 50%; 
-            width: 3rem;
-            height: 3rem; 
+            width: 4rem;
+            height: 4rem; 
             display: flex;
             align-items: center;
             justify-content: center;
