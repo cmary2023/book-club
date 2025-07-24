@@ -1,23 +1,21 @@
+/*Fonts*/
 @font-face {
     font-family: "Roboto";
     src: url(./fonts/Roboto-VariableFont_wdth\,wght.ttf) format('truetype');
 }
-
 @font-face {
     font-family: "Alliance";
     src: url(./fonts/AlliancePersonalUse-6z0o.ttf) format('truetype');
 }
 
-
 body {
     margin: 0;
     font-family: "Roboto";
 }
-
+/*Header Section*/
 header {
     background-color: #1f2937;
 }
-
 /*Navbar*/
 .navbar {
     display: flex;
@@ -25,40 +23,33 @@ header {
     /* logo left, menu right */
     align-items: center;
     padding: 15px 40px;
-
 }
-
 .logo {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-
 .logo img {
     height: 50px;
     width: 60px;
     border-radius: 5px;
 }
-
 .logo span {
     font-size: 24px;
     color: #f9faf8;
     font-family: 'Alliance', serif;
 }
-
 .nav-links {
     display: flex;
     list-style: none;
     gap: 30px;
     margin-right: 5em;
 }
-
 .nav-links a {
     text-decoration: none;
     color: white;
     font-size: 18px;
 }
-
 .nav-links a:hover {
     color: rgb(127, 172, 255);
 }
@@ -70,27 +61,21 @@ header {
     align-items: center;
     padding: 60px;
     gap: 40px;
-    /* Optional spacing between text and image */
-
 }
-
 .hero {
     flex: 1;
     max-width: 50%;
 }
-
 .hero h1 {
     font-size: 48px;
     font-weight: 800;
     margin-bottom: 10px;
 }
-
 .hero p {
     font-size: 18px;
     color: #e5e7eb;
     margin-bottom: 20px;
 }
-
 .hero button {
     padding: 10px 20px;
     background-color: #3882f6;
@@ -100,22 +85,17 @@ header {
     border-radius: 5px;
     cursor: pointer;
 }
-
 .hero button:hover {
     background-color: darkblue;
 }
-
 .hero-image {
     flex: 1;
     max-width: 50%;
 }
-
 .hero-image img {
     width: 580px;
     height: 360px;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* height: auto;
-    display: block;*/
 }
