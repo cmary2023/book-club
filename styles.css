@@ -332,3 +332,34 @@ footer {
             background-color: #1d4ed8; 
             transform: translateY(-3px); 
         }
+/* Container for the scrolling images */
+.scroll.imgbx {
+    overflow: hidden; /* Hide overflowing content */
+    white-space: nowrap; /* Prevent line breaks */
+    position: relative;
+    width: 100%; /* Full width of the container */
+    height: 200px; /* Adjust height as needed */
+}
+
+/* Inner container for the images */
+.scroll.imgbx div {
+    display: flex; /* Arrange images in a row */
+    animation: scroll 25s linear infinite; /* Infinite scrolling animation */
+}
+
+/* Images inside the scroll */
+.scroll.imgbx img {
+    width: auto; /* Maintain aspect ratio */
+    height: 100%; /* Adjust height as needed */
+    margin-right: 10px; /* Add spacing between images */
+}
+
+/* Keyframes for the scrolling animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0); /* Start position */
+    }
+    100% {
+        transform: translateX(-100%); /* Move left by 100% of the container */
+    }
+}
