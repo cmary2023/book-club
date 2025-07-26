@@ -18,6 +18,10 @@ header {
     background-color: #1f2937;
 }
 
+body, p {
+    font-family: "Roboto", sans-serif, "Alliance";
+}
+
 /*Navbar*/
 .navbar {
     display: flex;
@@ -119,6 +123,15 @@ h2 {
     font-size: 36px;
     font-weight: 800;
     margin-bottom: 2rem;
+    color: #1f2937;
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    padding-bottom: 30px;
     color: #1f2937;
     text-align: center;
 }
