@@ -296,17 +296,7 @@ h2 {
     border-color: #ffffff;
 }
 
-footer {
-    background-color: #1f2937;
-    color: #9ca3af;
-    padding-top: 2rem;
-    text-align: center;
-}
 
-.footer-text {
-    text-align: center;
-    padding-bottom: 30px;
-}
 /* Scroll to Top Button */
         .scroll-to-top {
             position: fixed;
@@ -334,23 +324,28 @@ footer {
         }
 /* Container for the scrolling images */
 .scroll.imgbx {
-    overflow: hidden; /* Hide overflowing content */
-    white-space: nowrap; /* Prevent line breaks */
     position: relative;
+    overflow: hidden; /* Hide overflowing content */
     width: 100%; /* Full width of the container */
-    height: 200px; /* Adjust height as needed */
+    height: 200px; /* Set a default height for the container */
+    margin-bottom: 2rem; /* Add spacing below the scroll section */
 }
 
 /* Inner container for the images */
 .scroll.imgbx div {
     display: flex; /* Arrange images in a row */
-    animation: scroll 25s linear infinite; /* Infinite scrolling animation */
+    gap: 10px; /* Add spacing between images */
+    animation: scroll var(--t, 40s) linear infinite; /* Increase duration to 40s for slower scrolling */
 }
 
 /* Images inside the scroll */
 .scroll.imgbx img {
-    width: auto; /* Maintain aspect ratio */
-    height: 100%; /* Adjust height as needed */
+    flex-shrink: 0; /* Prevent images from shrinking */
+    width: 150px; /* Set a fixed width for the images */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure images fill their space without distortion */
+    border: 2px solid #ccc; /* Add a border around the images */
+    border-radius: 5px; /* Optional: Add rounded corners */
     margin-right: 10px; /* Add spacing between images */
 }
 
@@ -362,4 +357,32 @@ footer {
     100% {
         transform: translateX(-100%); /* Move left by 100% of the container */
     }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .scroll.imgbx {
+        height: 150px; /* Reduce height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .scroll.imgbx {
+        height: 120px; /* Further reduce height for very small screens */
+    }
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #1f2937;
+    color: #9ca3af;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.footer-text {
+    text-align: center;
+    padding-bottom: 30px;
 }
