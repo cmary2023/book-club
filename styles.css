@@ -72,28 +72,37 @@ body, p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px;
+    padding: 60px 40px;
     gap: 40px;
-}
-.hero {
-    flex: 1;
-    max-width: 50%;
+    background-color: #1f2937;
+    flex-wrap: wrap;
 }
 
-.hero h1 {
+.hero-container>div {
+    flex: 2;
+    max-width: 500px;
+    text-align: left;
+    flex-basis: auto;
+    min-width: 280px;
+}
+
+/* Heading */
+.hero {
     font-size: 48px;
     font-weight: 800;
+    color: #f9faf8;
     margin-bottom: 10px;
-    padding-bottom: 30px;
 }
 
-.hero p {
+/* Paragraph */
+.hero-p {
     font-size: 18px;
     color: #e5e7eb;
     margin-bottom: 30px;
 }
 
-.hero button {
+/* Button */
+.hero-button {
     padding: 10px 20px;
     background-color: #3882f6;
     color: #e5e7eb;
@@ -101,23 +110,63 @@ body, p {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.hero button:hover {
+.hero-button:hover {
     background-color: darkblue;
 }
 
+/* Image */
 .hero-image {
-    flex: 1;
+    flex: 1 1 350px;
+    /* Default flex-basis for larger screens */
+    max-width: 500px;
+    /* MOST IMPORTANT: Ensures the image never overflows its allocated space */
+    height: auto;
+    /* Crucial: Maintains aspect ratio */
+    object-fit: cover;
+    border-radius: 5px;
+    /* object-position: center;  You can try 'top', 'bottom', 'left', 'right' if central cropping is bad */
+    padding-right: 30px;
 }
 
-.hero-image img {
-    width: 400px;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        /* Stacks items vertically on mobile */
+        text-align: center;
+        /* Centers text content */
+        padding: 40px 20px;
+        /* Adjust padding for smaller screens */
+        gap: 20px;
+        /* Adjust gap for smaller screens */
+    }
+
+    /* Adjustments for the text content block on small screens */
+    .hero-container>div {
+        flex: 1 1 auto;
+        /* Allow text block to take full width of container */
+        max-width: 100%;
+        /* Ensure it doesn't try to be too wide */
+        min-width: unset;
+        /* Remove min-width to allow more flexibility if needed */
+        text-align: center;
+    }
+
+    /* Adjustments for the image on small screens */
+    .hero-image {
+        flex: 1 1 auto;
+        /* Allow image to take full width available for a single item */
+        max-width: 100%;
+        /* Already set above, but good to reinforce */
+        max-height: 300px;
+        width: 100%;
+        /* Ensure it takes full available width when stacked */
+    }
 }
+
 /*Books Section*/
 h2 {
     font-size: 36px;
