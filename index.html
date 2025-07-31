@@ -11,7 +11,7 @@
 
 <body>
     <!-- Header Section -->
-    <header>
+    <header id="top">
         <nav class="navbar">
             <div class="logo">
                 <img src="./images/icons/logo.png" />
@@ -39,64 +39,64 @@
             </div>
             <img class="hero-image" src="./images/books/book-club.gif" alt="Book Club Gif">
         </section>
+      <!--Books Grid-->
         <h2>Some of our favorite picks</h2>
-        <section class="book-section">
-            <div class="book-flex-scroll">
-                <article class="book-card">
-                    <a href="books.html"><img src="./images/books/Kill.png" alt="Kill Creatures Cover"></a>
-                    <h3>Kill Creatures</h3>
-                    <p>Rory Power</p>
-                </article>
+        <section class="book-grid">
+            <div class="book-card">
+                <a href="books.html"><img src="./images/books/Kill.png" alt="Kill Creatures Cover"></a>
+                <h3>Kill Creatures</h3>
+                <p>Rory Power</p>
+            </div>
 
-                <article class="book-card">
-                    <a href="books.html"><img src="./images/books/Never-Flinch.png" alt="Never Flinch Cover"></a>
-                    <h3>Never Flinch</h3>
-                    <p>Stephen King</p>
-                </article>
+            <div class="book-card">
+                <a href="books.html"><img class="book-card" src="./images/books/Never-Flinch.png"
+                        alt="Never Flinch Cover"></a>
+                <h3>Never Flinch</h3>
+                <p>Stephen King</p>
+            </div>
+            <div class="book-card">
+                <a href="books.html"><img class="book-card" src="./images/books/One-Kiss.png"
+                        alt="One Dark Kiss Cover"></a>
+                <h3>One Dark Kiss</h3>
+                <p>Rebecca Zanetti</p>
+            </div>
+            <div class="book-card">
+                <a href="books.html"><img class="book-card" src="./images/books/Poppy.png"
+                        alt="The Poppy Fields Cover"></a>
+                <h3>The Poppy Fields</h3>
+                <p>Nikki Erlick</p>
+            </div>
+        </section>
 
-                <article class="book-card">
-                    <a href="books.html"><img src="./images/books/One-Kiss.png" alt="One Dark Kiss Cover"></a>
-                    <h3>One Dark Kiss</h3>
-                    <p>Rebecca Zanetti</p>
-                </article>
-
-                <article class="book-card">
-                    <a href="books.html"><img src="./images/books/Poppy.png" alt="The Poppy Fields Cover"></a>
-                    <h3>The Poppy Fields</h3>
-                    <p>Nikki Erlick</p>
-                </article>
-
-                <article class="book-card">
-                    <img src="./images/books/never-leave.png" alt="We can never leave Cover">
-                    <h3>We Can Never Leave</h3>
-                    <p>H.E Edgmon</p>
-                </article>
-            </section>
-        
         <!-- Quote Section -->
-       <section class="blockquote">
+        <section class="blockquote">
             <blockquote class="quote-text">
                 "The more that you read, the more things you will know. The more that you learn, the more places
                 you'll go."
             </blockquote>
             <p class="quote-author">- Dr. Seuss </p>
         </section>
-        
+
         <!-- Call to Action Section -->
-      <section class="join-section">
-            <div class="join-box">
-                <div class="join-text">
-                    <h3 class="join-title">Ready to turn the page?</h3>
-                    <p class="join-subtitle">Join to our book club!</p>
-                </div>
-               <a href="join.html"><button class="join-button">
+        <section class="join-section">
+            <div class="join-text">
+                <h3 class="join-title">Ready to turn the page?</h3>
+                <p class="join-subtitle">Join to our book club!</p>
+            </div>
+            <a href="join.html"><button class="join-button">
                     Join Now
                 </button></a>
-            </div>
         </section>
-         <button class="scroll-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
-        &#x2191; <!-- Up arrow character -->
-    </button>
+         <!-- The Scroll-to-Top Button -->
+        <a href="#top"><button id="scroll-to-top-btn" class="scroll-to-top-button">
+                <!-- SVG icon for the arrow -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-arrow-up">
+                    <path d="m5 12 7-7 7 7" />
+                    <path d="M12 19V5" />
+                </svg>
+            </button></a>
     </main>
     <!-- Footer Section -->
     <footer>
