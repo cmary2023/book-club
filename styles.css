@@ -381,6 +381,7 @@ footer {
     height: 4em;
 }
 p.footer-text {
-    text-align: center;
-   margin-top: 24px;
+    padding-top: 24px;
 }
+
+
