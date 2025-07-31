@@ -313,7 +313,63 @@ h2 {
     transform: scale(1.05);
     border-color: #ffffff;
 }
+/*About page*/
+/* Scroll to Top Button */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 2rem; 
+            right: 2rem; 
+            background-color: #2563eb; 
+            color: green; 
+            border: none;
+            border-radius: 50%; 
+            width: 4rem;
+            height: 4rem; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            z-index: 1000;
+        }
 
+        .scroll-to-top:hover {
+            background-color: #1d4ed8; 
+            transform: translateY(-3px); 
+        }
+/* Container for the scrolling images */
+.scroll.imgbx {
+    overflow: hidden; /* Hide overflowing content */
+    white-space: nowrap; /* Prevent line breaks */
+    position: relative;
+    width: 100%; /* Full width of the container */
+    height: 200px; /* Adjust height as needed */
+}
+
+/* Inner container for the images */
+.scroll.imgbx div {
+    display: flex; /* Arrange images in a row */
+    animation: scroll 25s linear infinite; /* Infinite scrolling animation */
+}
+
+/* Images inside the scroll */
+.scroll.imgbx img {
+    width: auto; /* Maintain aspect ratio */
+    height: 100%; /* Adjust height as needed */
+    margin-right: 10px; /* Add spacing between images */
+}
+
+/* Keyframes for the scrolling animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0); /* Start position */
+    }
+    100% {
+        transform: translateX(-100%); /* Move left by 100% of the container */
+    }
+}
 /*Scroll Up Button*/
 .scroll-to-top-button {
     position: fixed;
