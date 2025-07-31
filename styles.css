@@ -380,7 +380,7 @@ footer {
     text-align: center;
     height: 4em;
 }
-.footer-text {
+p.footer-text {
     text-align: center;
    margin-top: 24px;
 }
