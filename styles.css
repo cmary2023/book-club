@@ -345,6 +345,79 @@ h2 {
         transform: translateX(-100%); /* Move left by 100% of the container */
     }
 }
+/*Join Page*/
+.join-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.join-info {
+    margin-bottom: 30px;
+}
+
+.join-info h2 {
+    font-family: 'Playfair Display', serif;
+    color: #4b3f72;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.join-info p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Form Styles */
+.join-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.join-form label {
+    margin-top: 15px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.join-form input,
+.join-form textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease;
+}
+
+.join-form input:focus,
+.join-form textarea:focus {
+    border-color: #4b3f72;
+    outline: none;
+}
+
+/* Submit Button */
+.join-form button {
+    margin-top: 25px;
+    padding: 12px 20px;
+    background-color: #4b3f72;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.join-form button:hover {
+    background-color: #362c5c;
+}
+
 /*Scroll Up Button*/
 .scroll-to-top-button {
     position: fixed;
