@@ -348,12 +348,13 @@ h2 {
 /*Join Page*/
 /* General container styles - similar to your original, but a bit more refined */
 .join-container {
-    max-width: 600px; /* Make it a little less wide */
-    margin: 50px auto;
-    padding: 40px; /* Increase padding for more breathing room */
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
     background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
 }
 
 .join-info {
