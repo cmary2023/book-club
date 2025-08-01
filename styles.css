@@ -393,7 +393,7 @@ h2 {
 .join-form label {
     margin-top: 15px;
     font-weight: 600;
-    color:white;
+    color:#fcfcfc;
     margin-bottom: 5px;
 }
 
@@ -427,7 +427,7 @@ h2 {
 }
 
 .join-form button:hover {
-    background-color: #362c5c;
+    background-color:#362c5c;
 }
 /*Scroll Up Button*/
 .scroll-to-top-button {
@@ -468,6 +468,7 @@ footer {
 p.footer-text {
     padding-top: 24px;
 }
+
 
 
 
