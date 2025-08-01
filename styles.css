@@ -346,7 +346,6 @@ h2 {
     }
 }
 /*Join Page*/
-/* General container styles - similar to your original, but a bit more refined */
 .join-container {
     max-width: 700px;
     margin: 0 auto;
@@ -355,101 +354,68 @@ h2 {
     border-radius: 16px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
 }
-}
 
 .join-info {
-    text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .join-info h2 {
     font-family: 'Playfair Display', serif;
     color: #4b3f72;
-    font-size: 2.2rem; /* Slightly larger heading */
+    font-size: 1.8rem;
     margin-bottom: 10px;
 }
 
 .join-info p {
-    font-size: 1.1rem;
-    color: #666;
+    font-size: 1rem;
+    color: #444;
     line-height: 1.6;
 }
 
-/* Redesigned Form Styles */
+/* Form Styles */
 .join-form {
     display: flex;
     flex-direction: column;
 }
 
-.form-group {
-    position: relative; /* This is key for the floating label effect */
-    margin-bottom: 30px; /* Increased space between fields */
+.join-form label {
+    margin-top: 15px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
 }
 
-/* Style the input fields to have only a bottom border */
 .join-form input,
 .join-form textarea {
-    width: 100%;
-    padding: 10px 0;
-    border: none;
-    border-bottom: 2px solid #ccc; /* Only a bottom border */
-    background: transparent;
-    font-size: 1.1rem;
-    color: #333;
-    transition: border-color 0.3s ease;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease;
 }
 
-.join-form textarea {
-    min-height: 100px;
-    resize: vertical;
-}
-
-/* Focus state */
 .join-form input:focus,
 .join-form textarea:focus {
-    border-color: #4b3f72; /* Highlight the border on focus */
+    border-color: #4b3f72;
     outline: none;
 }
 
-/* The floating label */
-.join-form label {
-    position: absolute;
-    top: 10px; /* Align with the input text */
-    left: 0;
-    font-size: 1.1rem;
-    color: #999;
-    pointer-events: none; /* Make the label unclickable */
-    transition: all 0.3s ease;
-}
-
-/* The label moves up when the input is focused or has content */
-.join-form input:focus + label,
-.join-form input:not(:placeholder-shown) + label,
-.join-form textarea:focus + label,
-.join-form textarea:not(:placeholder-shown) + label {
-    top: -15px; /* Move the label up */
-    font-size: 0.8rem; /* Make it smaller */
-    color: #4b3f72;
-}
-
-/* Redesigned Submit Button */
+/* Submit Button */
 .join-form button {
-    margin-top: 40px;
-    padding: 15px;
+    margin-top: 25px;
+    padding: 12px 20px;
     background-color: #4b3f72;
     color: white;
     border: none;
-    border-radius: 25px; /* More rounded corners */
-    font-size: 1.1rem;
-    font-weight: 600;
+    border-radius: 8px;
+    font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: background-color 0.3s ease;
 }
 
 .join-form button:hover {
     background-color: #362c5c;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 /*Scroll Up Button*/
 .scroll-to-top-button {
