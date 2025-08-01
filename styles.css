@@ -350,7 +350,7 @@ h2 {
     max-width: 700px;
     margin: 0 auto;
     padding: 30px;
-    background-color: #ffffff;
+    background-color:#090b22 ;
     border-radius: 16px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
     margin-top: 30px;
@@ -373,14 +373,14 @@ h2 {
 
 .join-info h2 {
     font-family: 'Playfair Display', serif;
-    color: #4b3f72;
+    color:#a48ded;
     font-size: 1.8rem;
     margin-bottom: 10px;
 }
 
 .join-info p {
     font-size: 1rem;
-    color: #f1eded;
+    color: white;
     line-height: 1.6;
 }
 
@@ -393,7 +393,7 @@ h2 {
 .join-form label {
     margin-top: 15px;
     font-weight: 600;
-    color:#f1eded;
+    color:white;
     margin-bottom: 5px;
 }
 
@@ -417,7 +417,7 @@ h2 {
 .join-form button {
     margin-top: 25px;
     padding: 12px 20px;
-    background-color: #4b3f72;
+    background-color: #391aaf;
     color: white;
     border: none;
     border-radius: 8px;
@@ -468,5 +468,6 @@ footer {
 p.footer-text {
     padding-top: 24px;
 }
+
 
 
