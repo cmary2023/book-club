@@ -25,55 +25,29 @@
         </nav>
     </header>
     <main>
-        <section>
-            <div class="container">
-                <h1>Join Our Book Club</h1>
-
-                <div>
-                    <p>
-                        Become a member of our vibrant reading community! Fill out the form below to get started.
-                    </p>
-
-                    <form>
-                        <div>
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required placeholder="John Doe">
-                        </div>
-
-                        <div>
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required placeholder="you@example.com">
-                        </div>
-
-                        <div>
-                            <label for="password">Password</label>
-                            <input type="password" id="password" name="password" required
-                                placeholder="Create a password">
-                        </div>
-
-                        <div>
-                            <label for="confirm-password">Confirm Password</label>
-                            <input type="password" id="confirm-password" name="confirm-password" required
-                                placeholder="Confirm your password">
-                        </div>
-
-                        <div>
-                            <input id="newsletter" name="newsletter" type="checkbox">
-                            <label for="newsletter">
-                                Receive our monthly newsletter
-                            </label>
-                        </div>
-
-                        <div>
-                            <button type="submit">
-                                Join Now
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+      <section class="join-info">
+            <h2>Become a Member</h2>
+            <p>We welcome readers of all backgrounds and tastes. Fill out the form below and we’ll get in touch soon
+                with details about our next meeting!</p>
         </section>
+
+        <form class="join-form" action="#" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="genre">Favorite Genre</label>
+            <input type="text" id="genre" name="genre">
+
+            <label for="message">Why do you want to join?</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
     </main>
+
      <footer>
         <p class="footer-text">&copy; 2025 Book Club. All rights reserved.</p>
     </footer>
