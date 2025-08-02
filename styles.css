@@ -537,6 +537,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
+    margin-top: 20px;
 }
 
 .info-block {
@@ -730,6 +731,7 @@ footer {
 p.footer-text {
     padding-top: 24px;
 }
+
 
 
 
