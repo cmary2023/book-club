@@ -7,7 +7,8 @@ This project is inspired by a modern layout design and serves as a digital prese
 ---
 
 ## 📸 Screenshots 
-
+![Screenshot](<img width="1366" height="1815" alt="image" src="https://github.com/user-attachments/assets/27bccdfd-b9a3-4672-897c-a108757d3f13" />
+)
 ## 🔍 Features
 
 - Responsive design for all screen sizes
