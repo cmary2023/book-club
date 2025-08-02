@@ -532,6 +532,81 @@ h2 {
         transform: translateX(-100%); /* Move left by 100% of the container */
     }
 }
+.bookclub-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.info-block {
+    flex: 1;
+    min-width: 280px;
+    background-color: #7471d3;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.info-block h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #151616;
+    font-family: 'Alliance', serif;
+}
+
+.info-block p {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #1f1d1d;
+}
+
+.info-block img {
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.about img.qr {
+    width: 200px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    padding: 8px 16px;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.club h2 {
+    font-size: 32px;
+}
+
+.club .quote {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #201f1f;
+}
+
+/* === Responsive for small screens === */
+@media screen and (max-width: 768px) {
+    .bookclub-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-block {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
 /*Join Page*/
 .join-container {
     max-width: 700px;
@@ -655,6 +730,7 @@ footer {
 p.footer-text {
     padding-top: 24px;
 }
+
 
 
 
